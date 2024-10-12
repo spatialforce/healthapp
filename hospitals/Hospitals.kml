@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Hospitals.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Hospitals</name>
+		<visibility>0</visibility>
+		<open>1</open>
+		<Placemark>
+			<name>Mater Dei Hospital</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>28.59766660306682</longitude>
+				<latitude>-20.18223792165924</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0002192838573981321</heading>
+				<tilt>0</tilt>
+				<range>1106.268396058431</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>28.59641455767377,-20.18115475676674,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>United Bulawayo Hospitals</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>28.61732037398873</longitude>
+				<latitude>-20.1648012411632</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0003625277491370709</heading>
+				<tilt>0</tilt>
+				<range>1106.37769600397</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>28.61563837458223,-20.16555856996473,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mpilo Central Hospital</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>28.56936518149855</longitude>
+				<latitude>-20.12611300221667</latitude>
+				<altitude>0</altitude>
+				<heading>-1.786837528379013e-08</heading>
+				<tilt>0</tilt>
+				<range>1114.134284862345</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>28.56936113420182,-20.12611966044078,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Thorngrove Hospital</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>28.55575372592689</longitude>
+				<latitude>-20.14777431640533</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001143682228970249</heading>
+				<tilt>27.80338188603085</tilt>
+				<range>217.8050742846826</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>28.55609063153403,-20.14790082703687,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bulawayo West Hospital</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>28.5109953</longitude>
+				<latitude>-20.0807571</latitude>
+				<altitude>0</altitude>
+				<heading>-1.590277340731758e-15</heading>
+				<tilt>0</tilt>
+				<range>1106.977368683244</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>28.51095467168543,-20.08084488344539,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Charter House Medical Center Hospital</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>28.58063517569762</longitude>
+				<latitude>-20.15232161663477</latitude>
+				<altitude>0</altitude>
+				<heading>-0.00605508910496549</heading>
+				<tilt>23.88162707767211</tilt>
+				<range>735.4554196478239</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>28.5818172569028,-20.15207111526886,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ingutsheni Hospital</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>28.58635184891926</longitude>
+				<latitude>-20.17702892554852</latitude>
+				<altitude>0</altitude>
+				<heading>-0.008016681267878717</heading>
+				<tilt>9.986806910203404</tilt>
+				<range>4395.884999198073</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>28.57667125193618,-20.18069147594216,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Premier Hospital</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>28.60863036556711</longitude>
+				<latitude>-20.18620656679814</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01570839770339455</heading>
+				<tilt>19.72787159892698</tilt>
+				<range>1604.33420463155</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>28.61128394198719,-20.18589737194277,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Services Homepage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow: hidden;
+        }
+        header {
+            background: url("{% static 'images/home_page.png' %}") no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1; /* Ensure overlay is above the background */
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            z-index: 2; /* Ensure text is above the overlay */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        p {
+            font-size: 1.5em;
+            margin: 10px 0;
+            z-index: 2; /* Ensure text is above the overlay */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .cta-button {
+            background-color:  #ffcc00;  /* Green button */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s;
+            z-index: 2; /* Ensure button is above the overlay */
+        }
+        .cta-button:hover {
+            background-color: rgba(255, 255, 255, 0.3)
+        }
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 3; /* Ensure navbar is above everything */
+            display: flex;
+            justify-content: space-between; /* Space between left and right content */
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            text-decoration: none;
+        }
+        nav ul.left {
+            margin-right: auto; 
+            
+        }
+        nav ul.left li {
+            margin: 0 15px;
+            color: white; 
+            text-decoration: none;
+        }
+        nav ul.left a{
+            color: #fff;
+            text-decoration: none;
+
+        }
+        nav ul.left a:hover{
+         color: #ffcc00;
+         transform: translateY(-2px);
+        }
+        nav ul.right {
+            display: flex; 
+            align-items: center; 
+            margin-right: 30px; 
+        }
+        nav ul.right li {
+            margin: 0 10px; 
+        }
+        
+        .button {
+            background-color:  #ffcc00; ;
+            color: white; 
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+          
+        }
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.3); 
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul class="left">
+        <li><a href="{% url 'hhome' %}">Hospitals</a></li>
+        <li><a href="#clinics">Clinics</a></li>
+        <li><a href="{% url 'whome' %}">Wards</a></li>
+    </ul>
+    <ul class="right">
+        <li><a href="{% url 'register_url' %}" class="button">Sign Up</a></li>
+        <li><a href="{% url 'login_url' %}" class="button">Login</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="overlay"></div>
+    <h1>Health Services for Everyone</h1>
+    <p>Your health is our priority. Get the care you need.</p>
+    <a href="{% url 'webmap_url' %}" class="cta-button">View Webmap</a>
+</header>
+
+
+
+</body>
+</html>

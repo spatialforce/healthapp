@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals in Bulawayo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #212529; /* Dark background */
+            color: #fff;
+            padding: 10px 0; /* Reduced padding */
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em; /* Adjusted font size */
+            text-transform: uppercase;
+        }
+        nav {
+            margin-top: 10px; /* Reduced margin */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px; /* Reduced margin */
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 12px; /* Reduced padding */
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #343a40; /* Slightly lighter on hover */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .hospital {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            flex: 1 1 calc(30% - 30px);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .hospital:hover {
+            transform: translateY(-5px);
+        }
+        .hospital img {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid #003a80;
+        }
+        .hospital-content {
+            padding: 20px;
+        }
+        .hospital-content h2 {
+            color: #003a80;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .hospital-content p {
+            margin: 0;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #212529; /* Dark footer */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .additional-info {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hospitals in Bulawayo</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home_url' %}">Home</a></li>
+            <li><a href="#hospitals">Hospitals</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container" id="hospitals">
+
+    <div class="hospital">
+        <img src="{% static 'images/hos1.png' %}" alt="Mpilo Central Hospital">
+        <div class="hospital-content">
+            <h2>Mpilo Central Hospital</h2>
+            <p>Mpilo Central Hospital is one of the largest and oldest hospitals in Bulawayo. It offers a wide range of medical services including emergency care, surgery, and specialized treatments.</p>
+            <p>The hospital is renowned for its dedicated staff and comprehensive health programs. With over 700 beds, Mpilo serves as a referral center for many smaller clinics in the region, ensuring that patients receive the care they need.</p>
+            <p>The hospital has a well-equipped ICU and provides training for medical professionals, contributing significantly to the healthcare sector in Bulawayo.</p>
+        </div>
+    </div>
+
+    <div class="hospital">
+        <img src="{% static 'images/hos2.png' %}" alt="United Bulawayo Hospitals">
+        <div class="hospital-content">
+            <h2>United Bulawayo Hospitals (UBH)</h2>
+            <p>UBH is a leading public health facility that provides both inpatient and outpatient services. It has a reputation for quality care and is equipped with modern medical technology.</p>
+            <p>The hospital specializes in a variety of fields including pediatrics, obstetrics, and surgery, making it a vital resource for the community.</p>
+            <p>UBH also runs various health outreach programs aimed at improving community health and preventive care.</p>
+        </div>
+    </div>
+
+    <div class="hospital">
+        <img src="{% static 'images/hos3.png' %}" alt="Mater Dei Hospital">
+        <div class="hospital-content">
+            <h2>Mater Dei Hospital</h2>
+            <p>As one of the premier private hospitals in Bulawayo, Mater Dei offers specialized services with a focus on maternal and child health.</p>
+            <p>The hospital features state-of-the-art facilities and a team of experienced healthcare professionals. Patients can expect personalized care and shorter waiting times, ensuring a comfortable experience during their visit.</p>
+            <p>Mater Dei is also known for its advanced surgical procedures and quality patient care standards.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="additional-info">
+    <h2>Healthcare Services in Bulawayo</h2>
+    <p>The healthcare landscape in Bulawayo extends beyond hospitals. Numerous clinics, pharmacies, and health centers provide essential services to the community. These facilities offer preventive care, routine check-ups, and vaccinations, ensuring that residents have access to basic healthcare.</p>
+    <p>Community health initiatives are also vital, with programs focusing on disease prevention, nutrition, and health education. Partnerships between hospitals and local organizations help to address specific health challenges faced by the population.</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Hospitals in Bulawayo. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+</html>

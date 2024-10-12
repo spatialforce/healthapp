@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Force</title>
+   
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header, .footer-section {
+    background-color: #003a80; /* Dark Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1, .footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.about-section, .mission-section, .values-section, .what-i-do-section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+     /* Bright Yellow */
+}
+
+p, li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #003a80;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00; /* Bright Yellow */
+}
+
+.footer-section {
+    font-size: 0.9em;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 20px; /* Adds consistent spacing between items */
+}
+
+.footer-item {
+    flex: 1 1 200px; /* Allows items to grow and shrink with a minimum width */
+    margin: 10px; /* Space between items */
+    min-width: 180px; /* Prevents items from getting too narrow */
+    background-color: #004d99; /* Slightly lighter blue for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the item */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-item:hover {
+    background-color: #005cbf; /* Darker blue on hover */
+}
+
+.footer-item strong {
+    display: block; /* Makes the label take a full line */
+    margin-bottom: 5px; /* Space between label and content */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.footer-item p {
+    margin: 0; /* Removes default margin for paragraphs */
+}
+
+.footer-item a {
+    color: #ffcc00; /* Bright Yellow */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-item a:hover {
+    color: #fff; /* Changes color on hover */
+}
+
+@media (max-width: 600px) {
+    .about-section, .mission-section, .values-section, .what-i-do-section, .footer-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .header, .footer-section {
+        padding: 15px;
+    }
+
+    .header h1, .footer-section h2 {
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to Spatial Force</h1>
+    </header>
+
+    <div class="about-section">
+        <h2>About Us</h2>
+        <p>
+            Spatial Force is a pioneering organization dedicated to advancing Geographic Information Systems (GIS) development. Founded by Kudzanai Chakavarika, we specialize in creating interactive web maps and tackling a wide range of GIS challenges, including spatial analysis and technical problem-solving. With expertise in both front-end and back-end development, as well as hands-on technical skills, Spatial Force is committed to delivering comprehensive GIS services that empower clients to visualize and analyze spatial data effectively. Our mission is to leverage the power of GIS technology to drive informed decision-making and foster sustainable growth in communities. At Spatial Force, we believe in the transformative potential of spatial intelligence and strive to make it accessible to all.
+        </p>
+    </div>
+   <div class="what-i-do-section">
+        <h2>What we Do</h2>
+        <p>
+            As  skilled developers based in Bulawayo, Zimbabwe, at Spatial Force,
+             we excel in utilizing a diverse range of front-end and back-end technologies to create
+              innovative solutions. Proficient in Django, GeoDjango, and PostGIS, we leverage Python and 
+              Django REST Framework to build robust applications that interact seamlessly with data. 
+              Our front-end expertise includes JavaScript, HTML, CSS, Leaflet, Turf.js, and Bootstrap, 
+              enabling us to create engaging and interactive web applications and maps. We also do
+               spatial analysis and creation of various vainteractive maps, as well utilizing
+                remote sensing indices such as EVI, NDVI, SAVI, and NDWI in environmental management. Additionally, we conduct land 
+               cover change mapping and change detection analysis using tools like Google Earth Engine (GEE), 
+               QGIS, ArcMap, and ENVI. Our work also extend to data cleaning and preparation, ensuring high-quality 
+               data for analysis. With a passion for GIS and a commitment to problem-solving, We tackle a wide
+                array of challenges in the field, making significant contributions to our projects.
+        </p>
+    </div>
+
+    <div class="mission-section">
+        <h2>Mission</h2>
+        <p>
+            At Spatial Force, our mission is to harness the power of Geographic Information Systems (GIS) 
+            to provide innovative solutions that enhance spatial analysis and decision-making. We strive to
+             empower individuals and organizations with the tools they need to effectively visualize,
+             interpret, and utilize spatial data, ultimately contributing to sustainable development and
+              improved community outcomes.
+        </p>
+    </div>
+
+    <div class="values-section">
+        <h2>Values</h2>
+        <ul>
+            <li><strong>Innovation:</strong> We are committed to continually advancing our techniques and technologies to deliver cutting-edge GIS solutions.</li>
+            <li><strong>Integrity:</strong> We uphold the highest standards of professionalism and ethics in all our interactions and services.</li>
+            <li><strong>Collaboration:</strong> We believe in the power of teamwork and partnerships, fostering strong relationships with clients to achieve shared goals.</li>
+            <li><strong>Accessibility:</strong> We aim to make GIS technology accessible to all, ensuring that our solutions empower diverse communities and stakeholders.</li>
+            <li><strong>Sustainability:</strong> We are dedicated to promoting practices that support environmental stewardship and sustainable development.</li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h2>Contact Information</h2>
+        <div class="footer-grid">
+            <div class="footer-item">
+                <strong>Address:</strong>
+                <p>17 Longhurst Northlyne, Bulawayo, Zimbabwe</p>
+            </div>
+            <div class="footer-item">
+                <strong>WhatsApp:</strong>
+                <p>+263 779 135 076</p>
+            </div>
+            <div class="footer-item">
+                <strong>Call:</strong>
+                <p>+263 717 428 085</p>
+            </div>
+            <div class="footer-item">
+                <strong>Email:</strong>
+                <p>
+                    <a href="mailto:kudzanaichakavarika@gmail.com">kudzanaichakavarika@gmail.com</a> or 
+                    <a href="mailto:info@spatialforce.co.zw">info@spatialforce.co.zw</a>
+                </p>
+            </div>
+        </div>
+
+        <h2>Social Media</h2>
+        <div class="footer-grid">
+            <div class="footer-item">
+                <strong>Instagram:</strong>
+                <p><a href="https://www.instagram.com/spatialforce" target="_blank">Spatial Force</a></p>
+            </div>
+            <div class="footer-item">
+                <strong>Facebook:</strong>
+                <p><a href="https://www.facebook.com/spatialforce" target="_blank">Spatial Force</a></p>
+            </div>
+            <div class="footer-item">
+                <strong>X (Twitter):</strong>
+                <p><a href="https://twitter.com/spatialforce43" target="_blank">spatialforce43</a></p>
+            </div>
+        </div>
+
+        <h2>Links</h2>
+        <div class="footer-grid">
+            <div class="footer-item">
+                <a href="/terms-and-conditions">Terms and Conditions</a>
+            </div>
+            <div class="footer-item">
+                <a href="/privacy-policy">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
